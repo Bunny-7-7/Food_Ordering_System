@@ -1,0 +1,120 @@
+@charset "ISO-8859-1";
+
+/* Global Styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #a5a58d;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+#logoname{
+text-decoration: solid;
+
+}
+
+/* Logo */
+.logo {
+    height: 30px;
+    width: 30x;
+    /* border-radius: 50%; */
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+#logoname{
+    color: black;
+    text-decoration: solid;
+}
+
+.Owner_Logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #fca311; /* Crimson hover color */
+    transform: scale(1.05);
+}
+
+a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #fca311; /* Crimson underline */
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Button Style */
+button {
+    color: #fca311;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #fca311; /* Darker crimson shade */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    .Owner_Logo {
+        margin: 0;
+    }
+}
+
+

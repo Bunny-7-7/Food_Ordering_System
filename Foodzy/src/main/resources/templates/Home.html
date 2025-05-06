@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Foodzy</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+    <link rel="stylesheet" href="" th:href="@{css/Home.css}" />
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1610653216265-74079d187414?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+      }
+      h1,
+      h3 {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav th:replace="~{Navigation::navbar()}"></nav>
+    <div class="text">
+      <h1>WELCOME TO OUR WEBSITE</h1>
+      <h3>
+        Where Quality Meets Innovation! <br />
+        Explore our wide range of products designed to enhance your life.
+      </h3>
+    </div>
+  </body>
+</html>
